@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 17, 2017 6:05:29 PM by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="com.neu.entity.Login" table="Login" catalog="ProjectDB" optimistic-lock="version">
+        <id name="userName" type="string">
+            <column name="userName" length="25" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="string">
+            <column name="password" length="25" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" />
+        </property>
+        <property name="role" type="string">
+            <column name="role" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

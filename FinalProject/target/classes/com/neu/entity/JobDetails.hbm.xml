@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 17, 2017 6:05:29 PM by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="com.neu.entity.JobDetails" table="JobDetails" catalog="ProjectDB" optimistic-lock="version">
+        <id name="jobID" type="java.lang.Integer">
+            <column name="jobID" />
+            <generator class="native" />
+        </id>
+        <property name="jobTitle" type="string">
+            <column name="jobTitle" length="45" />
+        </property>
+        <property name="organisation" type="string">
+            <column name="organisation" length="45" />
+        </property>
+        <property name="jobDesc" type="string">
+            <column name="jobDesc" length="500" />
+        </property>
+        <property name="skills" type="string">
+            <column name="skills" length="45" />
+        </property>
+        <property name="postedBy" type="string">
+            <column name="postedBy" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
